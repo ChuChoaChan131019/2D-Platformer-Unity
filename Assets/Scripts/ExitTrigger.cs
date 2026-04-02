@@ -5,11 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class ExitTrigger : MonoBehaviour
 {
+    [SerializeField] private AudioClip winSFX;
     //public Animator anim;
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Player")
         {
+            if(winSFX != null) AudioSource.PlayClipAtPoint(winSFX, transform.position);
             StartCoroutine("LevelExit");
         }
     }

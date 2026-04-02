@@ -8,15 +8,21 @@ public class pickup : MonoBehaviour
 
     public pickupType pt;
     [SerializeField] GameObject PickupEffect;
+    [SerializeField] private AudioClip coinSFX; 
+    [SerializeField] private AudioClip gemSFX;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        Debug.Log("Da cham vao: " + collision.gameObject.name);
         if(pt == pickupType.coin)
         {
             if(collision.gameObject.tag == "Player")
             {
                 GameManager.instance.IncrementCoinCount();
-           
+                
+                if(coinSFX != null) 
+            AudioSource.PlayClipAtPoint(coinSFX, transform.position);
+            
                 Instantiate(PickupEffect, transform.position, Quaternion.identity);
 
                 Destroy(this.gameObject,0.2f);
@@ -30,9 +36,11 @@ public class pickup : MonoBehaviour
             if (collision.gameObject.tag == "Player")
             {
                 GameManager.instance.IncrementGemCount();
-            
-                Instantiate(PickupEffect, transform.position, Quaternion.identity);
 
+                if(gemSFX != null) AudioSource.PlayClipAtPoint(gemSFX, transform.position);
+
+                Instantiate(PickupEffect, transform.position, Quaternion.identity);
+                
                 Destroy(this.gameObject, 0.2f);
 
             }
