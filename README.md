@@ -1,4 +1,4 @@
-# Lab 03 - Khám phá dự án 2D-Platformer-Unit
+# Lab 04 - Khám phá dự án 2D-Platformer-Unit
 
 ## Thông tin sinh viên
 - **Họ tên**: Trần Thị Phương Trang
