@@ -1,37 +1,22 @@
-# 2D-platformer-Game-Unity
-2D Tilemap Platformer Unity
-Create your own 2D platformer game with ease using this Unity project template. This repository provides a foundation for building classic side-scrolling platformers with Unity's powerful 2D features.
+# Lab 03 - Khám phá dự án 2D-Platformer-Unit
 
-## Features:
-Tilemap Integration: Leverage Unity's Tilemap system for efficient level design and quick iteration.
+## Thông tin sinh viên
+- **Họ tên**: Trần Thị Phương Trang
+- **MSSV**: 2314288
+- **Lớp**: CTK47A
 
-Player Controller: A customizable player controller script with smooth movement and double jump movement.
+## Mô tả
+Bài thực hành Lab 04 môn **Game 2D Development with Unity**.
+Khám phá và phân tích dự án game 2D-Platformer-Unity.
 
-Animated Player Controller: Player control with Idle, Run, Jump animations implemented in the project.
+## Các thay đổi đã thực hiện
+1.Thêm âm thanh ăn tiền, chiến thắng
+2.Thêm bẫy,kẻ thù
+3.Thêm menuAbout về các thông tin như tên game,mô tả, danh sách thành viên nhóm
 
-Game Manager and UI Manager: Systems to manage gameplay.
-
-Player Death and Respawning: Respawn and death system.
-
-Platformer Mechanics: Jumping, double-jumping, and grounded movement are all set up for a classic platformer feel.
-
-Coins and Pickups: Coins and Pickups to make gameplay feel fun.
-
-## Getting Started:
-Clone the repository.
-Open the project in Unity (compatible with Unity 20xx.xx).
-Explore the sample scenes and adapt them to fit your game concept.
-Customize player sprites, tilesets, and level design to create your unique platformer experience.
-Documentation:
-Refer to the Wiki for detailed documentation and guidelines on using the template, implementing new features, and optimizing your game.
-
-## Contributions:
-Contributions are welcome! Whether you want to fix bugs, improve existing features, or add new functionality, feel free to fork the repository and submit pull requests.
-
-## License:
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-![Screenshot (1513)](https://github.com/striderzz/2D-platformer/assets/72110940/86828c36-c457-438c-a09d-abff34692e71)
-
-
-
+## Kiến thức đã học được
+1. Hiểu cấu trúc của một dự án Unity (Assets, Scripts, Scenes, Prefabs…).
+2. Biết cách phân tích code trong dự án game thực tế như GameManager, Character và Enemy.
+3. Hiểu và nhận diện một số design pattern..
+4. Biết cách thêm âm thanh, các chướng ngoại vật, menu.
+5. Làm quen với Git/GitHub: clone project, commit và push mã nguồn lên repository.
